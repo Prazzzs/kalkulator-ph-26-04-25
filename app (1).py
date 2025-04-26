@@ -3,15 +3,19 @@ import math
 st.set_page_config(page_title="Kalkulator pH & pOH", layout="centered")
 
 # Title
-st.write("This is some text.")
+col1, col2, col3 = st.columns(3)
 
-st.slider("This is a slider", 0, 100, (25, 75))
+with col1:
+    st.header("A cat")
+    st.image("https://static.streamlit.io/examples/cat.jpg")
 
-st.divider()  # 👈 Draws a horizontal rule
+with col2:
+    st.header("A dog")
+    st.image("https://static.streamlit.io/examples/dog.jpg")
 
-st.write("This text is between the horizontal rules.")
-
-st.divider()  # 👈 Another horizontal rule
+with col3:
+    st.header("An owl")
+    st.image("https://static.streamlit.io/examples/owl.jpg")
 # Description
 st.write("""
 Aplikasi ini membantu menghitung nilai pH dan pOH larutan berdasarkan input konsentrasi ion [H⁺] atau [OH⁻].
