@@ -3,15 +3,15 @@ import math
 st.set_page_config(page_title="Kalkulator pH & pOH", layout="centered")
 
 # Title
-st.title("🧪 Kalkulator pH & pOH Larutan")
-st.title("🧪 This is a title")
-st.subheader("🧪_Streamlit_ is :blue[cool] :sunglasses:")
-st.markdown("*🧪 Streamlit* is **really** ***cool***.")
-st.markdown('''
-    :red[Streamlit] :orange[can] :green[write] :blue[text] :violet[in]
-    :gray[pretty] :blue[colors] and :blue-background[highlight] text.''')
-st.markdown("Here's a bouquet &mdash;\
-            :tulip::cherry_blossom::rose::hibiscus::sunflower::blossom:")
+st.write("This is some text.")
+
+st.slider("This is a slider", 0, 100, (25, 75))
+
+st.divider()  # 👈 Draws a horizontal rule
+
+st.write("This text is between the horizontal rules.")
+
+st.divider()  # 👈 Another horizontal rule
 # Description
 st.write("""
 Aplikasi ini membantu menghitung nilai pH dan pOH larutan berdasarkan input konsentrasi ion [H⁺] atau [OH⁻].
