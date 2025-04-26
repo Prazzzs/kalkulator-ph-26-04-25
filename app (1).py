@@ -1,11 +1,9 @@
 import streamlit as st
 import math
-option = st.selectbox(
-    "pelajaran yang diminati?",
-    ("kimdas","kimor","tps"),
-)
+on = st.toggle("Activate feature")
 
-st.write("You selected:", option)
+if on:
+    st.write("Feature activated!")
 st.set_page_config(page_title="Kalkulator pH & pOH", layout="centered")
 
 # Title
