@@ -1,7 +1,6 @@
 import streamlit as st
 import math
-number = st.number_input("Insert a number")
-st.write("The current number is ", number)
+
 st.set_page_config(page_title="Kalkulator pH & pOH", layout="centered")
 
 # Title
