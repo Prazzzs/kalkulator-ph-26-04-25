@@ -2,7 +2,7 @@ import streamlit as st
 import math
 option = st.selectbox(
     "pelajaran yang diminati?",
-    ("kimdas,kimor,tps"),
+    ("kimdas","kimor","tps"),
 )
 
 st.write("You selected:", option)
