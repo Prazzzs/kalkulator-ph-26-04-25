@@ -1,5 +1,7 @@
 import streamlit as st
 import math
+number = st.number_input("Insert a number")
+st.write("The current number is ", number)
 st.set_page_config(page_title="Kalkulator pH & pOH", layout="centered")
 
 # Title
@@ -24,12 +26,7 @@ Aplikasi ini membantu menghitung nilai pH dan pOH larutan berdasarkan input kons
 # Sidebar for input
 with st.sidebar:
     st.header("Input Parameter")
-    ion_type = st.radio("Pilih jenis ion yang diketahui:", ("[H⁺]", "[OH⁻]")),
-    captions=[
-        "Laugh out loud.",
-        "Get the popcorn.",
-        "Never stop learning.",
-    ]
+    ion_type = st.radio("Pilih jenis ion yang diketahui:", ("[H⁺]", "[OH⁻]"))
     concentration = st.number_input(f"Masukkan konsentrasi {ion_type} (mol/L):", min_value=1e-14, max_value=1.0, format="%.2e")
     show_dark_mode = st.checkbox("Aktifkan Mode Gelap")
 
