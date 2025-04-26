@@ -29,7 +29,7 @@ with st.sidebar:
         "Laugh out loud.",
         "Get the popcorn.",
         "Never stop learning.",
-    ],
+    ]
     concentration = st.number_input(f"Masukkan konsentrasi {ion_type} (mol/L):", min_value=1e-14, max_value=1.0, format="%.2e")
     show_dark_mode = st.checkbox("Aktifkan Mode Gelap")
 
