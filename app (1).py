@@ -24,7 +24,12 @@ Aplikasi ini membantu menghitung nilai pH dan pOH larutan berdasarkan input kons
 # Sidebar for input
 with st.sidebar:
     st.header("Input Parameter")
-    ion_type = st.radio("Pilih jenis ion yang diketahui:", ("[H⁺]", "[OH⁻]"))
+    ion_type = st.radio("Pilih jenis ion yang diketahui:", ("[H⁺]", "[OH⁻]")),
+    captions=[
+        "Laugh out loud.",
+        "Get the popcorn.",
+        "Never stop learning.",
+    ],
     concentration = st.number_input(f"Masukkan konsentrasi {ion_type} (mol/L):", min_value=1e-14, max_value=1.0, format="%.2e")
     show_dark_mode = st.checkbox("Aktifkan Mode Gelap")
 
