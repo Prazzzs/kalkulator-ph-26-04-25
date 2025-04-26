@@ -4,9 +4,9 @@ st.set_page_config(page_title="Kalkulator pH & pOH", layout="centered")
 
 # Title
 st.title("🧪 Kalkulator pH & pOH Larutan")
-st.title("This is a title")
-st.subheader("_Streamlit_ is :blue[cool] :sunglasses:")
-st.markdown("*Streamlit* is **really** ***cool***.")
+st.title("🧪 This is a title")
+st.subheader("🧪_Streamlit_ is :blue[cool] :sunglasses:")
+st.markdown("*🧪 Streamlit* is **really** ***cool***.")
 st.markdown('''
     :red[Streamlit] :orange[can] :green[write] :blue[text] :violet[in]
     :gray[pretty] :blue[colors] and :blue-background[highlight] text.''')
