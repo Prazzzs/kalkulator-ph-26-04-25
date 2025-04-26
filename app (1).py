@@ -9,7 +9,7 @@ st.subheader("_Streamlit_ is :blue[cool] :sunglasses:")
 st.markdown("*Streamlit* is **really** ***cool***.")
 st.markdown('''
     :red[Streamlit] :orange[can] :green[write] :blue[text] :violet[in]
-    :gray[pretty] :rainbow[colors] and :blue-background[highlight] text.''')
+    :gray[pretty] :blue[colors] and :blue-background[highlight] text.''')
 st.markdown("Here's a bouquet &mdash;\
             :tulip::cherry_blossom::rose::hibiscus::sunflower::blossom:")
 # Description
